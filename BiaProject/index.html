@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/img/favicon.png">
+    <title>Bia-Cps</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+        <header>
+            <img src="assets/img/biaproject.png"width="250" alt="Logo da Bia-Project">
+        </header>
+
+        <main class="container">
+
+            <section id="funcoes">
+                <h2 class="sr-only">Entrada</h2>
+    
+                <div class="card animate__animated animate__fadeInDown">
+                    <h3>
+                        <span>
+                            Super Mario SMC
+                        </span>
+                        <img src="assets/img/super-mario.svg" width="40" alt="imagem de entradas">
+                    </h3>
+                   
+                    <form>
+                        <div>
+                            <label for="file1">Enviar arquivo</label>
+                            <input type="file" name="arquivo" id="file1" onchange="tryPatch()">
+                         
+                        </div>
+                    </form>
+                   
+                </div>
+    
+                <div class="card animate__animated animate__fadeInDown">
+                    <h3>
+                        <span>
+                            SMW Hacks
+                        </span>
+                        <img src="assets/img/mushroom.svg" width="40" alt="imagem de saidas">
+                    </h3>
+                    <form>
+                        <div>
+                            <label for="file2">Enviar arquivo</label>
+                            <input type="file" name="arquivo" id="file2" onchange="tryPatch()">
+                            
+                        </div>
+                    </form>
+                </div>
+    
+                <div id="card_alert" class="card convert animate__animated animate__fadeInDown">
+                    <h3>
+                        <span>
+                          Conversor
+                        </span>
+                        <img src="assets/img/star.svg" width="40" alt="imagem de total">
+                    </h3>
+                    
+                    <div style="margin-top: 35px;" id="result">
+                        <p  id="error">Esperando</p>
+                    </div>
+                    
+                </div>
+
+            </section>
+
+            <section>
+
+                <div class="card animate__animated animate__fadeInDown">
+                    <h3>
+                        <span>
+                            Super Mario SMC :
+                        </span>
+                        <span class="filename" id='file-name'></span>
+                        <img src="assets/img/sm.svg" width="40" alt="imagem de saidas">
+                    </h3>
+
+                </div>
+
+                <div class="card animate__animated animate__fadeInDown">
+                    <h3>
+                        <span>
+                            SMW Hacks :
+                        </span>
+                        <span class="filename" id='file-name-input2'></span>
+                        <img src="assets/img/smwhack.svg" width="40" alt="imagem de saidas">
+                    </h3>
+
+                </div>
+    
+            </section>
+
+        </main>
+
+        <footer>
+            <p style="margin-right: 1rem;">Bia Project v1.0 - 2021</p>
+            <img src="assets/img/brasil.svg" width="50" alt="" srcset="">
+        </footer>
+
+    <script>
+
+
+
+    </script>
+    <script src="assets/js/algo.js"></script>
+</body>
+</html>
