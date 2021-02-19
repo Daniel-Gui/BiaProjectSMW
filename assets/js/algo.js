@@ -151,7 +151,7 @@ function handleBps(rom, patch)
 		try {
 			ret = applyBps(new Uint8Array(rom.bytes), new Uint8Array(patch.bytes));
 		} catch(e) {
-			if (e === "wrong input file") {
+			if (e === "Arquivo de Entrada Errado") {
 				// maybe a headered rom? skip first 512 bytes for patching
 				ret = applyBps(new Uint8Array(rom.bytes, 512), new Uint8Array(patch.bytes));
 				// if we reached here, there were no errors, so the assumption about a headered rom was correct.
